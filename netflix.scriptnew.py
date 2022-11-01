@@ -2,7 +2,6 @@ from cgitb import text
 from pydoc import classname
 from selenium import webdriver
 import time
-from Credentials import LoginID, password
 from selenium.webdriver.common.by import By
 
 
@@ -22,6 +21,3 @@ print(description.text)
 time.sleep(3)
 
 play = driver.find_element("xpath" , "/html/body/div[1]/div/div[2]/section[3]/div[2]/ul/li[1]/div/button/span[1]").click()
-
-
-
