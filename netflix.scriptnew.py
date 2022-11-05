@@ -19,5 +19,30 @@ time.sleep(3)
 description = driver.find_element("xpath" , "/html/body/div[1]/div/div[2]/section[4]/div[3]/div[1]/div/p")
 print(description.text)
 time.sleep(3)
+try:
+    play = driver.find_element("xpath" , "/html/body/div[1]/div/div[2]/section[3]/div[2]/ul/li[1]/div/button/span[1]").click()
+    print("trailer played succesfully")
 
-play = driver.find_element("xpath" , "/html/body/div[1]/div/div[2]/section[3]/div[2]/ul/li[1]/div/button/span[1]").click()
+except:  
+    print("trailer not played")
+
+time.sleep(100)
+
+driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
